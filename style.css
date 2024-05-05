@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Cambria", sans-serif;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* button */
+.btn{
+     padding: 1rem 2.5rem ;
+     border-radius: 16px;
+     background: black;
+     color: white;
+     cursor: pointer;
+}
+
+/* title */
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 30%; 
+}
+
+/* logo dan navbar menu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 2rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.logo a{
+    color: black;
+}
+
+nav ul li a{
+    color: black;
+}
+
+/* Home Section */
+#home{
+    height: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0rem 2.5rem;
+}
+
+.home-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+    color: black;
+}
+
+.home-right img{
+    width: 300px;
+    border-radius: 0.7rem;
+}
+
+.home-right{
+    display: flex;
+    justify-content: right;
+    margin: 3.5rem;
+}
+
+section{
+    padding-bottom: 3rem;
+}
+
+/* About Section */
+#about{
+    color: white;
+    background-color: #6e64c5;
+}
+
+.section-title-about{
+    margin: 1rem 0;
+    padding: 2.5rem 0 0 0;
+}
+
+/* layout */
+.grid-3{
+    margin: 0 auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.about{
+    padding: 2rem 0rem;
+    text-align: center;
+    background: #9189d9;
+    border-radius: 0.7rem;
+}
+
+.about h4{
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.about p{
+    color: white;
+}
+
+.about-icon img{
+    border-radius: 0.7rem;
+}
+
+.main-container p{
+    margin: 0 auto;
+}
+/* End of About */
+
+/* Skills & Experience */
+#skills{
+    padding: 4rem;
+    background: white;
+}
+
+.section-title-skills{
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.experience{
+    display: flex;
+    gap: 2rem;
+}
+
+.experience line{
+    padding: 0 0.7rem;
+}
+
+.experience .line div{
+    width: 2px;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.experience-info{
+    margin: 0.3rem 0;
+}
+
+.experience-date{
+    margin-bottom: 3rem;
+}
+
+.experience .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list{
+    display: grid;
+    width: 40%;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right{
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+.skills-right p{
+    margin-top: 1rem;
+}
+/* End of Experience and Skills */
+
+/* Contact Section */
+#contact{
+    background-image: url(img/img3.png);
+    margin: 0 auto;
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.contact-form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-form h1{
+    margin-bottom: 2rem;
+}
+
+.contact-main-container h1{
+    margin-bottom: 0.75rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: none;
+    border: 1px solid gray;
+}
+
+
+.btn-submit{
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover{
+    background-color: rgb(209, 207, 207);
+    color: black;
+}
+/* End of Contact */
+
+/* footer */
+footer{
+    margin-bottom: 0;
+    padding: 3rem 0;
+    background: #9189d9;
+    text-align: center;
+}
+
+.footer-icons{
+    margin-bottom: 0.5rem;
+}
+
+.footer-icons a{
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover{
+    fill: black;
+}
